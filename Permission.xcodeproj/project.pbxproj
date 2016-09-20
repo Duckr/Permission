@@ -32,7 +32,7 @@
 		6DF9C2BE1C8F4FE5000710C1 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF9C2BD1C8F4FE5000710C1 /* Photos.swift */; };
 		6DF9C2C01C8F5003000710C1 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF9C2BF1C8F5003000710C1 /* Events.swift */; };
 		6DF9C2C61C8F5B4C000710C1 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF9C2C51C8F5B4C000710C1 /* Location.swift */; };
-		A82C92E81D91239600B05D58 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A82C92E71D91239600B05D58 /* Speech.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A82C92EA1D91262A00B05D58 /* Speech.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A82C92E71D91239600B05D58 /* Speech.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,19 @@
 			remoteInfo = Sorry;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A82C92E91D91261700B05D58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A82C92EA1D91262A00B05D58 /* Speech.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D42A7DA1D5F66B300236ABA /* SpeechRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
@@ -82,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82C92E81D91239600B05D58 /* Speech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +222,7 @@
 				6D86A9AE1BEBDC7C00E3DD5A /* Frameworks */,
 				6D86A9AF1BEBDC7C00E3DD5A /* Headers */,
 				6D86A9B01BEBDC7C00E3DD5A /* Resources */,
+				A82C92E91D91261700B05D58 /* CopyFiles */,
 			);
 			buildRules = (
 			);
