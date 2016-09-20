@@ -52,7 +52,6 @@ internal extension String {
     static let locationWhenInUseUsageDescription = "NSLocationWhenInUseUsageDescription"
     static let locationAlwaysUsageDescription    = "NSLocationAlwaysUsageDescription"
     static let microphoneUsageDescription        = "NSMicrophoneUsageDescription"
-    static let speechRecognitionUsageDescription = "NSSpeechRecognitionUsageDescription"
     static let photoLibraryUsageDescription      = "NSPhotoLibraryUsageDescription"
     static let cameraUsageDescription            = "NSCameraUsageDescription"
     static let mediaLibraryUsageDescription      = "NSAppleMusicUsageDescription"

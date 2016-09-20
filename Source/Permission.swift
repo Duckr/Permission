@@ -59,10 +59,6 @@ open class Permission: NSObject {
     /// The permission to access the user's motion.
     open static let motion = Permission(type: .motion)
     
-    /// The permission to access the user's SpeechRecognizer.
-    @available(iOS 10.0, *)
-    open static let speechRecognizer = Permission(type: .speechRecognizer)
-    
     /// The permission to access the user's MediaLibrary.
     @available(iOS 9.3, *)
     open static let mediaLibrary = Permission(type: .mediaLibrary)
@@ -118,7 +114,6 @@ open class Permission: NSObject {
         case .events:            return statusEvents
         case .bluetooth:         return statusBluetooth
         case .motion:            return statusMotion
-        case .speechRecognizer:  return statusSpeechRecognizer
         case .mediaLibrary:      return statusMediaLibrary
         }
     }
@@ -196,7 +191,6 @@ open class Permission: NSObject {
         case .events:            requestEvents(callback)
         case .bluetooth:         requestBluetooth(self.callback)
         case .motion:            requestMotion(self.callback)
-        case .speechRecognizer:  requestSpeechRecognizer(callback)
         case .mediaLibrary:      requestMediaLibrary(callback)
         }
     }
